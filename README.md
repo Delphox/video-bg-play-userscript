@@ -1,6 +1,6 @@
 # Video Background Play Fix  ![logo](/icon.svg)
 
-This userscript blocks [Page Visibility API](https://developer.mozilla.org/en-US/docs/Web/API/Page_Visibility_API) and parts of [Fullscreen API](https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API) on Youtube and Vimeo, which is used to prevent background play even if your browser supports it.
+This userscript blocks [Page Visibility API](https://developer.mozilla.org/en-US/docs/Web/API/Page_Visibility_API) and parts of [Fullscreen API](https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API) on Youtube and Vimeo, which are used to prevent background play even if your browser supports it.
 
 ## How to Install
 1. Install a script manager such as [Violentmonkey](https://chrome.google.com/webstore/detail/violentmonkey/jinjaccalgkegednnccohejagnlnfdag).
