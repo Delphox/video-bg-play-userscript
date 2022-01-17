@@ -1,8 +1,6 @@
 # Video Background Play Fix  ![logo](/icon.svg)
 
-Android web browsers can continue playing video even if you switch to another tab or app.
-However, sites can detect these user actions with the [Page Visibility API](https://developer.mozilla.org/en-US/docs/Web/API/Page_Visibility_API) and the [Fullscreen API](https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API).
-This userscript is designed to block events and properties exposed by the APIs.
+This userscript blocks [Page Visibility API](https://developer.mozilla.org/en-US/docs/Web/API/Page_Visibility_API) and parts of [Fullscreen API](https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API) on Youtube and Vimeo, which is used to prevent background play even if your browser supports it.
 
 ## How to Install
 1. Install a script manager such as [Violentmonkey](https://chrome.google.com/webstore/detail/violentmonkey/jinjaccalgkegednnccohejagnlnfdag).
