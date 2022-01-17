@@ -1,3 +1,18 @@
+// ==UserScript==
+// @name         Video Background Play Fix
+// @namespace    https://github.com/Delphox/video-bg-play-userscript
+// @version      1.6.0
+// @description  Prevents YouTube and Vimeo from pausing videos when minimizing or switching tabs. Userscript port of https://github.com/mozilla/video-bg-play
+// @author       Mozilla, Delphox
+// @match        *://*.youtube.com/*
+// @match        *://*.youtube-nocookie.com/*
+// @match        *://*.vimeo.com/*
+// @icon         https://github.com/Delphox/video-bg-play-userscript/raw/master/icon.svg
+// @grant        none
+// @run-at       document-start
+// ==/UserScript==
+
+(function() {
 'use strict';
 
 const IS_YOUTUBE = window.location.hostname.search(/(?:^|.+\.)youtube\.com/) > -1 ||
@@ -10,7 +25,7 @@ const IS_ANDROID = window.navigator.userAgent.indexOf('Android') > -1;
 
 // Page Visibility API
 if (IS_ANDROID || !IS_DESKTOP_YOUTUBE) {
-  Object.defineProperties(document.wrappedJSObject,
+  Object.defineProperties(document,
     { 'hidden': {value: false}, 'visibilityState': {value: 'visible'} });
 }
 
@@ -59,3 +74,5 @@ function getRandomInt(aMin, aMax) {
   let max = Math.floor(aMax);
   return Math.floor(Math.random() * (max - min)) + min;
 }
+
+})();
